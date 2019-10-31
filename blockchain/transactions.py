@@ -58,7 +58,6 @@ def verifyTransaction(transaction):
     new_hash = str(sender) + str(recipient) + str(amount)
     new_hash = new_hash.encode('utf-8')
     new_hash = hashlib.md5(new_hash).hexdigest()
-
     if hash != new_hash:
         return False
 

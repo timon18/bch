@@ -43,17 +43,11 @@ def readUserKeys():
     return address, pubkey, privkey
 
 
-def addressToPubKeyPEM(address):
-    """
-    Метод для преобразования адреса в публичный ключ
-    Принимает адрес и возвращает публичный ключ формата PEM (BEGIN RSA PUBLIC KEY...)
-    """
-    pubkey_pem = base64.b64decode(address.encode('utf-8')).decode('utf-8')
-
-    return pubkey_pem
-
-
 def pubKeyPEMtoPubKey(pubkeyPEM):
+    """
+    Метод для восстановления публичного ключа до цифр.
+    Принимает публичный ключ в формате PEM и возвращает публичный ключ в формате цифр.
+    """
     pubkey = rsa.PublicKey.load_pkcs1(pubkeyPEM)
     return pubkey
 
