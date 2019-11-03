@@ -1,0 +1,18 @@
+{
+  "hash": 11,
+  "time": 11,
+  "nonce": 11,
+  "proof": 11,
+  "transactions": [
+    {
+      "sender": "1q2w3e4r",
+      "recipient": "asdf",
+      "amount": 1
+    },
+    {
+      "sender": "asdf",
+      "recipient": "1q2w3e4r",
+      "amount": 6
+    }
+  ]
+}

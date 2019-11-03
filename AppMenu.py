@@ -8,6 +8,7 @@ class AppMenu(QtWidgets.QMainWindow, main_menu.Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
     window = AppMenu()
@@ -15,4 +16,5 @@ def main():
     app.exec_()
 
 
-main()
+if __name__ == '__main__':
+    main()
